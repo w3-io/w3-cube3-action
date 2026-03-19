@@ -1,0 +1,26 @@
+name: Cube3 fraud check
+
+on:
+  workflow_dispatch:
+    inputs:
+      address:
+        description: Blockchain address to check
+        required: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Inspect address
+        id: risk
+        uses: w3-io/w3-cube3-action@v1
+        with:
+          command: inspect
+          api-key: ${{ secrets.CUBE3_API_KEY }}
+          address: ${{ inputs.address }}
+
+      - name: Show results
+        run: |
+          echo "Risk assessment for ${{ inputs.address }}:"
+          echo '${{ steps.risk.outputs.result }}' | jq .

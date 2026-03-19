@@ -1,0 +1,30 @@
+name: 'W3 Cube3 Action'
+description: 'Fraud detection and risk assessment for blockchain addresses via Cube3'
+author: 'w3-io'
+
+inputs:
+  command:
+    description: 'Operation to perform'
+    required: true
+    default: 'inspect'
+  api-key:
+    description: 'Cube3 API key for authentication'
+    required: true
+  api-url:
+    description: 'Cube3 API base URL (override for testing/staging)'
+    required: false
+    default: 'https://validation-api.cube3.ai'
+  address:
+    description: 'Blockchain address to inspect'
+    required: false
+  chain-id:
+    description: 'Chain ID to filter results (e.g. "1" for Ethereum mainnet)'
+    required: false
+
+outputs:
+  result:
+    description: 'JSON result of the operation'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

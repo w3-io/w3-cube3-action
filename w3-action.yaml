@@ -1,0 +1,27 @@
+kind: integration
+partner: cube3
+name: Cube3 Fraud Detection
+version: 1.0.0
+repo: w3-io/w3-cube3-action
+commands:
+  - name: inspect
+    description: >
+      Risk assessment for a blockchain address. Returns per-chain scores
+      for fraud, compliance, cyber risk, and a combined score, along with
+      address type, deployer info, and analysis timestamps.
+    inputs:
+      address:
+        type: string
+        required: true
+        description: Blockchain address to inspect
+      chain-id:
+        type: string
+        required: false
+        description: Filter results to a specific chain (e.g. "1" for Ethereum mainnet)
+    outputs:
+      result:
+        type: object
+        description: >
+          JSON object with address and chains array. Each chain entry
+          includes chainId, type, deployer, scores (fraud, compliance,
+          cyber, combined), and detailed score breakdowns.

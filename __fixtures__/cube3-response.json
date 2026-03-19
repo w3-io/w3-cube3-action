@@ -1,0 +1,52 @@
+{
+  "address": "0x1234567890abcdef1234567890abcdef12345678",
+  "chain_result_list": [
+    {
+      "chain_id": "1",
+      "type": "eoa",
+      "deployer": null,
+      "deployed_at_by_chain_id": null,
+      "first_analysed_at_by_chain_id": "2024-01-15T10:30:00Z",
+      "last_analysed_at_by_chain_id": "2026-03-18T08:00:00Z",
+      "score": {
+        "fraud": { "value": 15 },
+        "compliance": { "value": 5 },
+        "cyber": { "value": 10 },
+        "combined_score": { "value": 12 }
+      },
+      "score_details": {
+        "fraud": {
+          "value": 15,
+          "sub_category": "transaction_patterns",
+          "sub_category_description": "Analysis of transaction patterns"
+        },
+        "compliance": {
+          "value": 5,
+          "sub_category": "sanctions",
+          "sub_category_description": "Sanctions screening results"
+        }
+      }
+    },
+    {
+      "chain_id": "137",
+      "type": "eoa",
+      "deployer": null,
+      "deployed_at_by_chain_id": null,
+      "first_analysed_at_by_chain_id": "2024-06-01T12:00:00Z",
+      "last_analysed_at_by_chain_id": "2026-03-18T08:00:00Z",
+      "score": {
+        "fraud": { "value": 72 },
+        "compliance": { "value": 45 },
+        "cyber": { "value": 60 },
+        "combined_score": { "value": 65 }
+      },
+      "score_details": {
+        "fraud": {
+          "value": 72,
+          "sub_category": "mixer_usage",
+          "sub_category_description": "Interaction with known mixing services"
+        }
+      }
+    }
+  ]
+}
