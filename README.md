@@ -3,6 +3,20 @@
 GitHub Action for fraud detection and risk assessment of blockchain
 addresses via the [Cube3](https://cube3.ai) Inspector API.
 
+## About Cube3
+
+[Cube3](https://cube3.ai) (CUBE AI) is a conversational crime
+intelligence platform for blockchain. It maps fraud networks across
+institutions and borders, detecting mule accounts 45-87 days before
+traditional bank systems and catching 75% of threats that banks miss.
+
+The Inspector API scores addresses across fraud, compliance, cyber
+risk, and combined risk dimensions. Cube3 is GDPR, ISO 27001, and
+SOC 2 certified.
+
+**Why use it:** Automated pre-transaction risk screening in
+workflows. Check any address before interacting with it.
+
 ## Usage
 
 ```yaml
