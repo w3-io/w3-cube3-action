@@ -7,6 +7,8 @@ complexity: beginner
 
 # Cube3 Fraud Detection
 
+[Cube3](https://cube3.ai) is a crime intelligence platform that maps fraud networks across blockchain. Their Inspector API scores addresses across four risk dimensions — fraud, compliance, cyber, and combined — detecting mule accounts and high-risk addresses 45-87 days before traditional systems. GDPR, ISO 27001, and SOC 2 certified. Use this action to screen addresses before transactions, flag high-risk counterparties, or build compliance workflows.
+
 Assess blockchain addresses for fraud, compliance, and cyber risk
 using the Cube3 Inspector API.
 
