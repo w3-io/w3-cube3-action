@@ -81,6 +81,26 @@ Returns per-chain risk scores for a blockchain address.
   run: echo "High fraud risk detected — blocking transaction"
 ```
 
+## Beyond the API: on-chain protection
+
+This action provides pre-transaction risk screening in workflows.
+Cube3 also offers **on-chain smart contract protection** — runtime
+transaction validation that can block malicious interactions before
+they execute.
+
+| Layer | What | When |
+|-------|------|------|
+| This action (off-chain) | Screen addresses before your workflow interacts with them | Workflow decision time |
+| Cube3 on-chain SDK | Block malicious transactions at the smart contract level | Transaction execution time |
+
+The action is ideal for workflow-level gatekeeping: check an address
+before sending funds, flag risky counterparties in a pipeline, or
+build compliance screening into automated processes. On-chain
+protection adds a second layer at the contract level.
+
+For on-chain integration, contact [Cube3](https://cube3.ai) about
+their smart contract SDK.
+
 ## Authentication
 
 Get an API key from [Cube3](https://cube3.ai). Store it as a secret
