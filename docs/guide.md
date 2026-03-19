@@ -81,7 +81,7 @@ Returns per-chain risk scores for a blockchain address.
   run: echo "High fraud risk detected — blocking transaction"
 ```
 
-## Beyond the API: on-chain protection
+## Beyond this W3 integration
 
 This action provides pre-transaction risk screening in workflows.
 Cube3 also offers **on-chain smart contract protection** — runtime
